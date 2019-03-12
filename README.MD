@@ -17,8 +17,23 @@ Please also note that:
  * If you plan on making an inverter please read the safety section
 
 ## Why EGS002
-First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? Because this PCB is dirt cheap on Ebay. Around 5$, so there’s no need for buying extra components, when this board contains half of the components we have to use, for this inverter.
+
+First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? Because this PCB is dirt cheap on Ebay. Around 5$, 
+so there’s no need for buying extra components, when this board contains half of the components we have to use, for this inverter.
+
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/1.jpg?raw=true "Figure")
+
+
+### Sinusoidal PWM
+
+A sinusoidal PWM (sPWM) signal can be constructed by dynamically changing the duty- cycle. The result is short pulses at the zero-crossings and long pulses at the wave peaks. This can be seen in the figure below.
+
+![Figure what](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/PWMsin_2.png?raw=true "Figure")
+
+
+
+
+
 
  ### 1.	Secondly, we need a host for this driver board. My own creation is this small 10x10cm PCB for 2$.
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/2.jpg?raw=true "Figure")
