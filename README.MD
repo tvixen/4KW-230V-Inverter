@@ -46,7 +46,6 @@ And for this little controller board we need a little power board. Here I made o
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/4.jpg?raw=true "Figure")
 
-Both PCB’s fabricated in China by JLCPCB.
 
 ### 3.	
 
@@ -54,6 +53,8 @@ Now a little EMI circuit to sort the spurious frequencies out.
 Made this filter according to the size of your toroid. PCB 10x10cm.  It’s just ferrite with some windings in the right direction.
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/5.jpg?raw=true "Figure") 
+
+All PCB’s fabricated in China by JLCPCB. If you chose to fabricate them all together, the prise is 12$ for 5 of each + postage around 14$.
 
 ### 4.	
 
@@ -103,32 +104,24 @@ Here is my example of the colour display 240x320 I use in my old "Piller UPS" ca
 ## Brief Theory
 ### Basic PWM
 
-Pulse width modulation’s (PWM) main use is to control the voltage supplied to electric circuits, it does this by rapidly switching a load on and off. Another way of thinking of it is to consider it as a method for a digital system to output an analogue signal. The figure below shows an example of a PWM signal.
+The Nano can do pulse width modulation’s (PWM), but with a PCB like EGS0002 the energy isn't worth it.
+The figure below shows an example of a PWM signal.
 
 ![Figure 1-1](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/basicPWM_3.png?raw=true "Figure 1.1")
 
 There are two properties to a PWM signal, the frequency which is determined by the period of the signal and the duty cycle which is determined by the high-time of the signal. The signal in figure above has a period of 250μS which means it switches at 4KHz. The duty-cycle is the percent high time in each period, in the last figure the duty-cycle is 60% because of the high-time and period of 150μS and 250μS respectively. It is the duty-cycle that determines average output voltage. In figure above the duty-cycle of 60% with 5V switching voltage results in 3V average output as shown by the red line. After filtering the output a stable analogue output can be achieved. 
 
-### Typical microcontroller PWM implementation
-
-This section describes how micro-controllers use timers/counters to implement a PWM signal, this description relies heavily on the figure below. Here the blue line represents a counter that resets after 16000, this gives the period of the PWM and also the switching frequency (fs), if this micro has a clock source of 16MHz, then fs will be 16×10^6/16×10^3 = 1KHz.
-
-The two other values of 11200 and 800 shown as the gree and red line, they represent compare output values of the micro. When the counter reaches this values the micro can change the output of some pins. In this case two pins are set to HIGH when the counter resets and then Set low when the counter reaches each of the output compare values. This determines the high time and therefore duty-cycle of the PWM. It's important to understand how a PWM is typcialy set up in a micro, as the explanation of the code in the next section will not make sense otherwise.
-
-![Figure what](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/sawtooth_counter_1.png?raw=true "Figure")
-
 ### Sinusoidal PWM
 
-A sinusoidal PWM (sPWM) signal can be constructed by dynamically changing the duty- cycle. The result is short pulses at the zero-crossings and long pulses at the wave peaks. This can be seen in the figure below.
+A sinusoidal PWM (SPWM) signal can be constructed by dynamically changing the duty- cycle. The result is short pulses at the zero-crossings and long pulses at the wave peaks. This can be seen in the figure below.
 
 ![Figure what](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/PWMsin_2.png?raw=true "Figure")
 
-The figure shows negative pulses which is not possible on most micro-controllers. Instead normally this is implemented with two pins, one pulsing the positive half of the sin wave and the second pulsing the negative half, this is how it is implemented in this repo as having the signal split across two pins makes sense if the signal is going to be used to control a H-bridge.
+If we then sends this to a toroid, the voltage vill be amplified, and the 230V RMS can be reached.
 
 ## Safety
 
 This section is to briefly discuss safety in regards to making an inverter that steps up to  mains voltage whether that be 110 or 230. First of all I don't encourage it, I'd prefer that you didn't and I take no responsibilty for your actions. Remember 30mA can be leathal, mains voltage deserves respect.
 
 If you still choose to do so, take basic precautionary steps like: Invest in some terminals and make sure that any high voltage part of the circuit is not touchable; don't modify it while it's power up; Don't do it alone.
-Here is an example of connections in a metal box. 
- 
+
