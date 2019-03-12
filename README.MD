@@ -2,34 +2,14 @@
 With these schematics and PCB's, you can create your own 230V AC 4KW inverter.
 Read Readme.pdf  how to do it.
 
-Here’s my small low cost 4KW inverter. 
-Under the “230V Inverter\Advanced” tab, you will find a “how to” with PCB’s and schematics. 
-1.	A controller 
-2.	A power stage
-3.	A EMI ac filter
-4.	Low cost Power supply
 
 First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? Because this PCB is dirt cheap on Ebay. Around 5$, so there’s no need for buying extra components, when this board contains half of the components we have to use, for this inverter.
-
-
-Here’s my small low cost 4KW inverter. 
-Under the “230V Inverter\Advanced” tab, you will find a “how to” with PCB’s and schematics. 
-1.	A controller 
-2.	A power stage
-3.	A EMI ac filter
-4.	Low cost Power supply
-
-First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? Because this PCB is dirt cheap on Ebay. Around 5$, so there’s no need for buying extra components, when this board contains half of the components we have to use, for this inverter.
-![Figure what](https://github.com/tvixen/230V-Inverter/230V-Inverter/blob/master/doc/1.jpg?raw=true "Figure")
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/doc/1.jpg?raw=true "Figure")
 
 ![Figure what](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/pulses_1.JPG?raw=true "Figure")
 
 
-
-
-![Figure what](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/pulses_1.JPG?raw=true "Figure")
-
-
+![Figure what](https://github.com/tvixen/230V-Inverter/tree/master/230V%20Inverter/doc/1.jpg?raw=true "Figure")
 
 
 
