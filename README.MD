@@ -20,25 +20,25 @@ Please also note that:
 First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? Because this PCB is dirt cheap on Ebay. Around 5$, so there’s no need for buying extra components, when this board contains half of the components we have to use, for this inverter.
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/1.jpg?raw=true "Figure")
 
- 1.	Secondly, we need a host for this driver board. My own creation is this small 10x10cm PCB for 2$.
+ ### 1.	Secondly, we need a host for this driver board. My own creation is this small 10x10cm PCB for 2$.
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/2.jpg?raw=true "Figure")
 
- 2.	And for this little controller board we need a little power board. Here I made one with 4 or 8 HY4008 FET’s. Again 10x10cm.
-https://github.com/tvixen/230V-Inverter/tree/master/230V%20Inverter/doc/3.jpg 
+### 2.	And for this little controller board we need a little power board. Here I made one with 4 or 8 HY4008 FET’s. Again 10x10cm.
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/3.jpg?raw=true "Figure")
 
 Both PCB’s fabricated in China by JLCPCB.
 
- 3.	Now a little EMI circuit to sort the spurious frequencies out. 
+### 3.	Now a little EMI circuit to sort the spurious frequencies out. 
 Made this filter according to the size of your toroid. PCB 10x10cm.  It’s just ferrite with some windings in the right direction.
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/4.jpg?raw=true "Figure") 
 
- 4.	A cheap and reliable power supply….from Ebay 1.25$:
+### 4.	A cheap and reliable power supply….from Ebay 1.25$:
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/5.jpg?raw=true "Figure") 
 Or one with a little more features 4$:
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/6.jpg?raw=true "Figure") 
 
 
- 5.	The cpu for programming purposes.  Startup, shutdown, Fan control, volt , amp, watt aso: 1.99$.
+### 5.	The cpu for programming purposes.  Startup, shutdown, Fan control, volt , amp, watt aso: 1.99$.
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/7.jpg?raw=true "Figure") 
  
 ## Midifying the EGS002 
