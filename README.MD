@@ -2,58 +2,62 @@
 With these schematics and PCB's, you can create your own 230V AC 4KW inverter.
 Read Readme.pdf  how to do it.
 
+# Arduino-Atmel-sPWM 
 
-First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? Because this PCB is dirt cheap on Ebay. Around 5$, so there’s no need for buying extra components, when this board contains half of the components we have to use, for this inverter.
+#### Implementation of an EGS002 on Ardunio
+
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/1.jpg?raw=true "Figure")
 
-![Figure what](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/pulses_1.JPG?raw=true "Figure")
+## Introduction
 
+The aim of this repo is to help the hobbyist or student make rapid progress in implementing an sPWM signal on a arduino or atmel micro, while making sure that the theory behind the sPWM and the code itself is understood. 
 
+Please also note that:
 
-![Figure what](https://github.com/tvixen/230V-Inverter/tree/master/230V%20Inverter/doc/1.jpg?raw=true "Figure")
+ * It's assumed the reader has a basic understanding of C programming
+ * If you plan on making an inverter please read the safety section
 
+## Why EGS002
+First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? Because this PCB is dirt cheap on Ebay. Around 5$, so there’s no need for buying extra components, when this board contains half of the components we have to use, for this inverter.
 
-
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/1.jpg?raw=true "Figure")
 
 1.	Secondly, we need a host for this driver board. My own creation is this small 10x10cm PCB for 2$.
-https://github.com/tvixen/230V-Inverter/tree/master/230V%20Inverter/doc/2.jpg 
-
- 
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/2.jpg?raw=true "Figure")
 
 2.	And for this little controller board we need a little power board. Here I made one with 4 or 8 HY4008 FET’s. Again 10x10cm.
 https://github.com/tvixen/230V-Inverter/tree/master/230V%20Inverter/doc/3.jpg 
 
 Both PCB’s fabricated in China by JLCPCB.
 
-
-
-
-
 3.	Now a little EMI circuit to sort the spurious frequencies out. 
 Made this filter according to the size of your toroid. PCB 10x10cm.  It’s just ferrite with some windings in the right direction.
- 
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/4.jpg?raw=true "Figure") 
 
 4.	A cheap and reliable power supply….from Ebay 1.25$:
- 
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/5.jpg?raw=true "Figure") 
 Or one with a little more features 4$:
- 
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/6.jpg?raw=true "Figure") 
 
 
 5.	The cpu for programming purposes.  Startup, shutdown, Fan control, volt , amp, watt aso: 1.99$.
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/6.jpg?raw=true "Figure") 
  
- 
+## Midifying the EGS002 
 And now for the modification on EGS002. With this modification the inverter can handle current peaks. So hopefully, no more blown FET’s.
- 
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/7.jpg?raw=true "Figure")  
 
 With this mod, the SPWM enable pin, can enable and disable the sinewave out. (Same as the Temp method, but the right way to do it).  
- 
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/8.jpg?raw=true "Figure")  
 1. Remove the 8 components with red a cross.
 2. Lift pin 7 on the cpu.
 3. Mount 3 short wires, where there’s a red line.
 4. Move R10 to position C30 (10k/103)
 
 
-# Arduino-Atmel-sPWM 
+# Connections
+![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/11.jpg?raw=true "Figure") 
+
 
 #### Implementation of an sPWM signal on Ardunio and Atmel micros
 
