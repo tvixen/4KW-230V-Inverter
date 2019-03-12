@@ -53,7 +53,7 @@
 // now transmitted to display. And Battery is now transmitted as a float.                 //
 // Update 3/1-2019                                                                        //
 // changed communications procedure                                                       // 
-// Update 3/1-2019                                                                        //
+// Update 3/1-2019   Code not 100% ready.                                                 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <EEPROM.h>
@@ -1434,23 +1434,19 @@ digitalWrite(DischargeRelaySW2, HIGH);  //Turn on Power from battery
 void loop() {
   wdt_reset();           // Watchdog reset
   ReadTemp();            // Read Temp 
-//  ReadVoltADC();         // Read ADC Volt
-//  ReadCurrentADC();      // Read ADC Current 
-//  AnalogReadVolt();      // Read analog volt values from 5VSineWaveVoltage & 12VSineWaveVoltage
-//  ReadToroidVoltage();   // Check voltage from toroid
-//  ReadTemperature();     // Check the tree temp sensors and update the powersupply for the fan
-  Simulatedata();          // Simulate input
-  //Serial.println("sender data");
-  //delay(10);
-  DebugMode();             // Serial input. Turn on/off the relays, powersupply, fan mf.
-  WriteDataToLCD();        // Write all data to the display
+  ReadVoltADC();         // Read ADC Volt
+  ReadCurrentADC();      // Read ADC Current 
+  AnalogReadVolt();      // Read analog volt values from 5VSineWaveVoltage & 12VSineWaveVoltage
+  ReadToroidVoltage();   // Check voltage from toroid
+  ReadTemperature();     // Check the tree temp sensors and update the powersupply for the fan
+  Simulatedata();        // Simulate input
+  DebugMode();           // Serial input. Turn on/off the relays, powersupply, fan mf.
+  WriteDataToLCD();      // Write all data to the display
 
   if (CommandFromDisplay==99)
     Shutdown(); //lukker ned
   if (CommandFromDisplay==22)
     StartUp(); //starter op
-
-  
  
 //end of loop
 }
