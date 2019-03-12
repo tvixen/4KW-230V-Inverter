@@ -25,6 +25,15 @@ First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? B
 ![Figure what](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/pulses_1.JPG?raw=true "Figure")
 
 
+
+
+https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/pulses_1.JPG?raw=true
+
+
+
+
+
+
 1.	Secondly, we need a host for this driver board. My own creation is this small 10x10cm PCB for 2$.
 https://github.com/tvixen/230V-Inverter/tree/master/230V%20Inverter/doc/2.jpg 
 
