@@ -31,14 +31,13 @@ Secondly, we need a host for this driver board. My own creation is this small 10
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/3.jpg?raw=true "Figure")
 
-Heres the files so you can make your own PCB for the Controller PCB: "Inverter Controller with SCR 1.1.zip"
+Heres the files so you can make your own PCB:
 
-https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/Cheap%20Inverter%20Controller%20with%20SCR%201.1.zip
+ "Inverter Controller with SCR 1.1.zip"
+ "Power Board 3.8.zip"
+ "EMI filter.zip"
 
-
-Heres the files so you can make your own PCB for the Power PCB: "Power Board 3.8.zip"
-
-https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/Inverter%20Power%20Board%203.8.zip
+https://github.com/tvixen/230V-Inverter/tree/master/230V%20Inverter/doc/download
 
 
 ### 2.	
