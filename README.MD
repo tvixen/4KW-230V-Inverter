@@ -100,6 +100,8 @@ If the I2S is used, a second Arduino with a display connected, can be used to sh
 Here is my example of the colour display 240x320 I use in my old "Piller UPS" cabinet.
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/display.jpg?raw=true "Figure")  
 
+Here I experiment with different types of input. First, the drawing is made in visio and then programmed into Arduino Mega.
+
 
 ## Brief Theory
 ### Basic PWM
