@@ -2,7 +2,7 @@
 With these schematics and PCB's, you can create your own 230V AC 4KW inverter.
 Read Readme.pdf  how to do it.
 
-## Implementation of an EGS002 on Ardunio
+## Implementation of an EGS002 with Ardunio Nano
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/1.jpg?raw=true "Figure")
 
@@ -30,6 +30,9 @@ Secondly, we need a host for this driver board. My own creation is this small 10
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/2.jpg?raw=true "Figure")
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/3.jpg?raw=true "Figure")
+
+Heres the layout for the Controller PCB: https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/Cheap Inverter Controller with SCR 1.1.zip
+Heres the layout for the Power PCB: https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/"Inverter Power Board 3.8.zip"
 
 ### 2.	
 
@@ -80,7 +83,7 @@ With this mod, the SPWM enable pin, can enable and disable the sinewave out. (Sa
 4. Move R10 to position C30 (10k/103)
 
 
-# Connections
+## Connections
 
 This is how the PCB's has to be connected inside a metal case.
 
@@ -98,10 +101,7 @@ Pulse width modulation’s (PWM) main use is to control the voltage supplied to 
 
 ![Figure 1-1](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/basicPWM_3.png?raw=true "Figure 1.1")
 
-There are two properties to a PWM signal, the frequency which is determined by the period of the signal and the duty cycle which is determined by the high-time of the signal. The signal in figure above has a period of 250μS which means it switches at 4KHz. The duty-cycle is the percent high time in each period, in the last figure the duty-cycle is 60% because of the high-time and period of 150μS and 250μS respectively. It is the duty-cycle that determines average output voltage. In figure above the duty-cycle of 60% with 5V switching voltage results in 3V average output as shown by the red line. After filtering the output a stable analogue output can be achieved. the figure below shows PWM signals with 80% and 10% duty-cycles. By dynamically changing the duty-cycle, signals other than a flat output voltage can be achieved.
-
-![Figure what](https://github.com/Terbytes/Arduino-Atmel-sPWM/blob/master/im/basicPWM_4.png?raw=true "Figure")
-
+There are two properties to a PWM signal, the frequency which is determined by the period of the signal and the duty cycle which is determined by the high-time of the signal. The signal in figure above has a period of 250μS which means it switches at 4KHz. The duty-cycle is the percent high time in each period, in the last figure the duty-cycle is 60% because of the high-time and period of 150μS and 250μS respectively. It is the duty-cycle that determines average output voltage. In figure above the duty-cycle of 60% with 5V switching voltage results in 3V average output as shown by the red line. After filtering the output a stable analogue output can be achieved. 
 
 ### Typical microcontroller PWM implementation
 
