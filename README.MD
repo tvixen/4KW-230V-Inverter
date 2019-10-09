@@ -96,7 +96,7 @@ This is how the PCB's has to be connected inside a metal case.
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/11.jpg?raw=true "Figure") 
 
-If the I2C is used, a second Arduino with a display connected, can be used to show the information running around in the litte Nano.
+If the I2C is used, a second Arduino Mega2560 with a display connected, can be used to show the information running around in the little Nano. The Mega is used coz of the more memory as the display is quite demanding with the graphis.
 Here is my example of the colour display 240x320 I use in my old "Piller UPS" cabinet.
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/display.jpg?raw=true "Figure")  
 
