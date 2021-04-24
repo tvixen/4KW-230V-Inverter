@@ -1,5 +1,6 @@
 # 4KW 230V-Inverter
-With these schematics and PCB's, you can create your own 230V AC 4KW inverter.
+With these schematics and PCB's, you can create your own offgrid 230V AC 4KW inverter.
+It has been up and running since early 2019, and is used every day. 
 Read Readme.pdf  how to do it.
 
 ## Implementation of an EGS002 with Ardunio Nano
@@ -20,6 +21,7 @@ Please also note that:
 
 First, the driver pcb. This is a known solution with EGS002.  And why EGS002 ? Because this PCB is dirt cheap on Ebay. Around 5$, 
 so there’s no need for buying extra components, when this board contains half of the components we have to use, for this inverter.
+It just has to be modified a bit.
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/1.jpg?raw=true "Figure")
 
