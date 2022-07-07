@@ -52,7 +52,7 @@ And for this little controller board we need a little power board. Here I made o
 ### 3.	
 
 Now a little EMI circuit to sort the spurious frequencies out. 
-Made this filter according to the size of your toroid. PCB 10x10cm.  It’s just ferrite with some windings in the right direction.
+Make this filter according to the size of your toroid. PCB 10x10cm.  It’s just ferrite with some windings in the right direction.
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/5.jpg?raw=true "Figure") 
 
