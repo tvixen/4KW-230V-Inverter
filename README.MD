@@ -56,7 +56,7 @@ Make this filter according to the size of your toroid. PCB 10x10cm.  It’s just
 
 ![Figure what](https://github.com/tvixen/230V-Inverter/blob/master/230V%20Inverter/doc/5.jpg?raw=true "Figure") 
 
-All PCB’s fabricated in China by JLCPCB. If you chose to fabricate them all together, the prise is 12$ for 5 of each + postage. So around 14$.
+All PCB’s fabricated in China by JLCPCB. If you chose to fabricate them all together, the prise is 12$. for 5 of each + postage. So around 14$.
 
 ### 4.	
 
